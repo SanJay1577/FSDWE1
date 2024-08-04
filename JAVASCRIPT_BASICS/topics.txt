@@ -1,0 +1,3 @@
+Alerts & Prompts & confirm (Done with examples)
+Operators - Arithmatic & Logical 
+Variables & Data Types (Done)
