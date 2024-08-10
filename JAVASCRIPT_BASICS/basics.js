@@ -84,12 +84,12 @@ console.log(
 );
 console.log(
   "any one equal to or || ->",
-  "15 = 15 and 20 = 10",
+  "15 = 15 or 20 = 10",
   value_left == 15 || value_right == 10
 );
 
 console.log(
   "any one equal to or || ->",
-  "15 = 20 and 20 = 10",
+  "15 = 20 or 20 = 10",
   value_left == 20 || value_right == 10
 );
