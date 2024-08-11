@@ -73,8 +73,32 @@ switch (day) {
 
 //create a customised calculator
 
-// calculator("reminder", 42, 8); //-> result 2
+// calculator("rem", 42, 8); //-> result 2
 // calculator("add", 5, 8); //-> result 13
 // calculator("sub", 8, 2); //-> result 6
 // calculator("div", 32, 8); //-> result 4
 // calculator("mul", 5, 8); //-> result 40
+
+function calculator(operation, num1, num2) {
+  switch (operation) {
+    case "add":
+      return num1 + num2;
+    case "sub":
+      return num1 - num2;
+    case "div":
+      return num1 / num2;
+    case "mul":
+      return num1 * num2;
+    case "rem":
+      return num1 % num2;
+    default:
+      return "please provide valid opertaion [mul,div,sub,add,rem]";
+  }
+}
+
+const addResult = calculator("add", 10, 35);
+const subResult = calculator("sub", 17681, 14672);
+const errResult = calculator("err", 17681, 14672);
+console.log("result of add", addResult);
+console.log("result of sub", subResult);
+console.log("result of err", errResult);
