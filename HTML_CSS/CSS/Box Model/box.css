@@ -1,0 +1,69 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.box-class {
+  /* border: 5px solid black; */
+  width: 100px;
+  height: 100px;
+  /* to right, to left, to bottom, to top */
+  /* background: linear-gradient(to right, yellow, red); */
+  background: radial-gradient(circle, yellow, red, blue, rgb(218, 20, 201));
+
+  /* top right bottom left  */
+  /* padding: 10px 20px 25px 35px;
+  margin: 10px 20px 0px 35px; */
+  padding-left: 15px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  border-left: 10px solid black;
+  border-right: 5px dashed red;
+  border-bottom: 3px dotted blue;
+  border-top: 5px double rgb(92, 10, 14);
+}
+
+.positions {
+  border: 1px solid rgb(233, 85, 85);
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.box {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+}
+
+.absolute {
+  background-color: brown;
+  /* takes reference as screen */
+  /* position: absolute; */
+  /* top: 0px;
+  left: 0; */
+}
+.relative {
+  background-color: magenta;
+  /* takes reference as parent element */
+  /* position: relative; */
+  /* left: 20px; */
+}
+.fixed {
+  background-color: goldenrod;
+  position: fixed;
+  /* takes reference as screen  and stays there*/
+  /* top: 0;
+  right: 0; */
+}
+.sticky {
+  background-color: khaki;
+  /* takes reference as parent element */
+  /* position: sticky;
+  top: 0; */
+}
