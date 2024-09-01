@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+.main-container {
+  border: 3px solid black;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  /* flex-direction: column; row; column-reverse; row-reverse */
+  flex-direction: row;
+  /* gap: 0.5rem; */
+  flex-wrap: wrap;
+  /* if wrap : align-content , else align-items: ; */
+  justify-content: center;
+  /* direction wise */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* justify-content: stretch; */
+  /* justify-content: start; */
+  /* justify-content: end; */
+
+  /* align-content: center; */
+  /* align-content: start; */
+  /* align-content: end; */
+  /* align-content: space-around; */
+  /* align-content: space-evenly; */
+  /* align-content: stretch; */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border: 1px solid black;
+}

@@ -32,7 +32,9 @@
   border: 1px solid rgb(233, 85, 85);
   width: 500px;
   height: 500px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  /* top: 10px;
+  position: static; */
 }
 
 .box {
