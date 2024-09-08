@@ -1,0 +1,78 @@
+html {
+  scroll-behavior: smooth;
+}
+:root ::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  text-align: center;
+}
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+a > button {
+  border: none;
+  font-size: larger;
+  background-color: whitesmoke;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  color: rgb(8, 61, 177);
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  padding: 15px;
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section > div {
+  padding-top: 40px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  header {
+    background-color: black;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    padding: 5px;
+    padding-bottom: 10px;
+    width: 98vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  nav {
+    gap: 0.5rem;
+    justify-content: space-around;
+  }
+
+  a > button {
+    font-size: large;
+    color: whitesmoke;
+    background-color: black;
+    font-weight: 200;
+  }
+}
