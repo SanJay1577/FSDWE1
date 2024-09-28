@@ -5,6 +5,14 @@ html {
 :root ::-webkit-scrollbar {
   display: none;
 }
+input:focus,
+textarea:focus {
+  outline: none;
+}
+/* input:-webkit-autofill,
+input:-webkit-autofill:focus() {
+  background-color: none;
+} */
 a {
   text-decoration: none;
 }
@@ -146,7 +154,58 @@ section > div {
 .skills-word {
   height: 20%;
 }
+.contact-section {
+  width: 90%;
+  height: 70%;
+  padding: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-area {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 27px;
+  border-radius: 10px;
+  width: 80%;
+}
+.email-inp {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+.email-inp:focus {
+  border: 1px solid blue;
+}
+textarea {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  height: 200px;
+}
+.send-btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  width: 40%;
+}
 @media screen and (min-width: 360px) and (max-width: 480px) {
+  textarea {
+    height: 150px;
+  }
   header {
     background-color: black;
     right: 0;
