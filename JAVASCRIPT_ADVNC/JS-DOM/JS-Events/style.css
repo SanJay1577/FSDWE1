@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+.form-conatiner {
+  padding: 20px;
+  margin: 0 auto;
+  border: 1px solid black;
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
