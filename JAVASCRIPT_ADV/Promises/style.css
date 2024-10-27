@@ -1,0 +1,27 @@
+.container {
+  background-color: white;
+  max-width: 15rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px 0px rgb(139, 137, 137);
+}
+
+#main {
+  background-color: whitesmoke;
+  place-items: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.information {
+  padding: 1rem;
+}
+
+#flag {
+  width: 15rem;
+  height: 10rem;
+}
+span {
+  font-weight: bold;
+}
