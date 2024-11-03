@@ -9,13 +9,30 @@ taskForm.addEventListener("submit", (event) => {
   let title = document.getElementById("title").value;
   let description = document.getElementById("description").value;
   const newTask = { id: Date.now(), title, description, completed: false };
-  addNewTask(newTask);
+  let checkedTask = isTaskExist(newTask);
+  addNewTask(checkedTask);
   taskForm.reset();
 });
 
+function showErrorMessage(msg) {
+  let erroMessage = document.getElementById("err-msg");
+  erroMessage.innerText = msg;
+  setTimeout(() => {
+    removeErrorMessage();
+  }, 1000);
+}
+function removeErrorMessage() {
+  let erroMessage = document.getElementById("err-msg");
+  erroMessage.innerText = "";
+}
 function addNewTask(task) {
-  tasks.push(task);
-  fetchTasks();
+  if (task) {
+    removeErrorMessage();
+    tasks.push(task);
+    fetchTasks();
+  } else {
+    showErrorMessage("Task Already exist");
+  }
 }
 //read
 function renderTask(task) {
@@ -44,6 +61,15 @@ function deleteTask(id) {
   fetchTasks();
 }
 
+//check task already exist
+function isTaskExist(t) {
+  let alreadyExist = tasks.find((task) => task.title == t.title);
+  if (alreadyExist) {
+    return null;
+  }
+  return t;
+}
+
 //fetch task
 function fetchTasks() {
   taskList.innerHTML = "";
@@ -52,3 +78,4 @@ function fetchTasks() {
   });
 }
 fetchTasks();
+// check task already exist and throw error
