@@ -132,3 +132,26 @@ function getcompanyName({ company }) {
   console.log("Company name ", company);
 }
 getcompanyName(profile);
+
+//optional chaning
+
+let profileArr = [
+  {
+    name: "sanjay",
+    company: "guvi",
+    location: "chennai",
+    designation: "Mentor",
+    batches: ["FSD-WE", "FSD-WD"],
+  },
+  {
+    name: "sanjay",
+    company: "guvi",
+    location: "chennai",
+    designation: "Mentor",
+    batches: ["FSD-WE", "FSD-WD"],
+  },
+];
+
+profileArr.map((profie, index) => {
+  console.log(profie?.data); //optional chaning
+});
